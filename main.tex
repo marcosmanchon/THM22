@@ -1,0 +1,193 @@
+%\documentclass{article}
+\documentclass[12pt,a4paper,oneside]{book}
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+%\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage[refpages]{gloss}
+\usepackage{float}
+\usepackage{anysize}
+\usepackage{appendix}
+\usepackage{lscape} 
+\usepackage{pdflscape}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{enumerate} 
+\usepackage{pdfpages}
+\usepackage{lipsum}
+
+
+
+\title{Proyecto Final de Ingeniería Industrial}
+\author{Guillermo GATES, Esteban TRABAJADOR}
+\date{May 2024}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION
+%----------------------------------------------------------------------------------------
+
+\marginsize{3.0cm}{3.0cm}{4.0cm}{3.0cm}
+\renewcommand*{\contentsname}{ÍNDICE}
+\renewcommand*{\listtablename}{Índice de tablas}
+\renewcommand*{\listfigurename}{Índice de figuras}
+\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\appendixname}{Anexos}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand*{\tablename}{Tabla}
+\renewcommand*{\chaptername}{Capítulo}
+\renewcommand*{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+
+
+
+%----------------------------------------------------------------------------------------
+%	PORTADA
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+ 
+\begin{center}
+ 
+ {\huge \bf UNIVERSIDAD NACIONAL DE CUYO}\\[1.2cm]
+ 
+{\Large PROYECTO FINAL DE ESTUDIO}\\{\Large  -  Facultad de Ingeniería - Carrera Ingeniería Industrial -}\\[2.0cm]
+
+
+\begin{center}
+\includegraphics[width=0.35\textwidth]{images/escudo-uncuyo.png}
+\end{center}
+
+\vspace{1.7cm}
+{{\bf Título: }: }Industrialización de Litio en Mendoza
+\title{Litio Industrial en Mendoza} % titulo de tu tesis para latex
+{\bf \large . }\\[1.7cm] % titulo de tu tesis
+
+
+{EJEMPLAR DE TESIS PRESENTADO PARA OPTAR EL TÍTULO DE INGENIERO INDUSTRIAL}\\[0.5cm]
+ 
+{{\bf Autores}: }\\[0.5cm] % nombres del autor o autores
+
+{\large GATES, Guillermo - TRABAJADOR, Esteban - Mayo 2024}\\[0.8cm] % fecha de sustentación
+{Mendoza - Argentina}
+\end{center}
+
+\end{titlepage}
+
+\newpage
+\newpage
+$\ $
+\thispagestyle{empty} % para que no se muestre el número en la página
+
+\includepdf{ACTAS/ACTA-TESIS}%se incluye un PDF con firmas o cualquier otro documento
+
+
+
+%----------------------------------------------------------------------------------------
+%	Dedicatoria
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\begin{flushright}
+{\large \bf DEDICATORIA}
+\\
+\textit{}
+\\
+\textit{} % agregar tu dedicatoria
+\end{flushright}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	Agradecimientos
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\begin{flushright}
+{\large \bf AGRADECIMIENTO}
+\\
+\textit{}
+{} % agregar tu dedicatoria
+\end{flushright}
+\end{titlepage}
+
+
+%----------------------------------------------------------------------------------------
+%	TABLA DE CONTENIDOS
+%---------------------------------------------------------------------------------------
+
+\tableofcontents
+\cleardoublepage
+\listoftables
+\listoffigures 
+%\makegloss
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	Resumen
+%----------------------------------------------------------------------------------------
+
+
+
+
+%\maketitle
+
+\chapter{Mapa Mental}
+\import{sections/}{introduction}
+
+\section{Resúmen Ejecutivo}
+\import{sections/}{section2}
+
+
+
+
+
+\chapter{Impacto y Significancia}
+\import{sections/}{section3}
+
+
+\chapter{Analítica de Mercado}
+\import{sections/}{section4}
+
+\chapter{Tamaño y Loalización}
+\import{sections/}{section5}
+
+
+\chapter{Ingeniería del Proyecto}
+\import{sections/}{section6}
+
+
+\chapter{Balances prorectados}
+\import{sections/}{section7}
+
+
+
+\chapter{Inversiones del Proyecto}
+\import{sections/}{section8}
+
+
+\chapter{Presupuestos de Ingresos y Gastos}
+\import{sections/}{section9}
+
+%\chapter{Financiamiento y Organización}
+%\import{sections/}{section10}
+
+%\chapter{Evaluación}
+%\import{sections/}{section11}
+
+
+\end{document}
